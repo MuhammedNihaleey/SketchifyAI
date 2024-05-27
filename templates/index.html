@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Artist AI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sketch Artist AI</h1>
+            <p class="tagline">Transform your words into art</p>
+        </header>
+        <main>
+            <form id="textToSketchForm" class="form-style">
+                <label for="textDescription">Describe your vision:</label>
+                <textarea id="textDescription" name="text_description" rows="4" cols="50" placeholder="Enter an object..."></textarea>
+                <button type="submit" class="btn-generate">Create Sketch</button>
+            </form>
+            <div id="sketchImage" class="image-container"></div>
+        </main>
+    </div>
+</body>
+</html>
